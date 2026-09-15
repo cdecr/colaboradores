@@ -17,7 +17,7 @@ const identificationHelp = document.querySelector("#identification-help");
 let current = 0;
 
 const IDENTIFICATION_FORMATS = {
-  "Cédula costarricense": { pattern: "[1-9]-[0-9]{4}-[0-9]{4}", placeholder: "1-1234-5678", help: "Formato: 1-1234-5678." },
+  "Cédula costarricense": { pattern: "[1-9][0-9]{8}", placeholder: "112345678", help: "Ingrese los 9 dígitos seguidos, sin espacios ni guiones." },
   "DIMEX": { pattern: "[0-9]{11,12}", placeholder: "Número de 11 o 12 dígitos", help: "Ingrese 11 o 12 dígitos, sin espacios ni guiones." },
   "Pasaporte": { pattern: "[A-Za-z0-9-]{6,15}", placeholder: "Ejemplo: A1234567", help: "Entre 6 y 15 letras, números o guiones." },
   "Otro documento": { pattern: ".{4,30}", placeholder: "Número del documento", help: "Ingrese el número tal como aparece en el documento." }
