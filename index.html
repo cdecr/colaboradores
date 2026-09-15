@@ -28,7 +28,8 @@
           <div class="section-heading"><span>01</span><div><h2>Información personal</h2><p>Ingrese los datos tal como aparecen en su documento de identidad.</p></div></div>
           <div class="field-grid">
             <label class="full">Nombre completo <em>*</em><input name="fullName" autocomplete="name" required></label>
-            <label>Número de cédula <em>*</em><input name="identification" required placeholder="1-1234-5678"></label>
+            <label>Tipo de identificación <em>*</em><select name="identificationType" id="identification-type" required><option value="">Seleccione</option><option value="Cédula costarricense">Cédula costarricense</option><option value="DIMEX">DIMEX</option><option value="Pasaporte">Pasaporte</option><option value="Otro documento">Otro documento</option></select></label>
+            <label>Número de identificación <em>*</em><input name="identification" id="identification-number" required placeholder="Seleccione primero el tipo" disabled><small id="identification-help" class="field-help">El formato se habilitará según el documento seleccionado.</small></label>
             <label>Fecha de nacimiento <em>*</em><input name="birthDate" type="date" required></label>
             <label>Nacionalidad <em>*</em><select name="nationality" required><option value="">Seleccione</option><option>Costarricense</option><option>Nicaragüense</option><option>Panameña</option><option>Salvadoreña</option><option>Hondureña</option><option>Guatemalteca</option><option>Mexicana</option><option>Colombiana</option><option>Venezolana</option><option>Estadounidense</option><option>Otra</option></select></label>
             <label>Estado civil <em>*</em><select name="maritalStatus" required><option value="">Seleccione</option><option>Soltero(a)</option><option>Casado(a)</option><option>Unión libre</option><option>Divorciado(a)</option><option>Viudo(a)</option><option>Prefiero no indicar</option></select></label>
@@ -65,7 +66,7 @@
         <section class="form-section" data-section="3">
           <div class="section-heading"><span>04</span><div><h2>Documentos</h2><p>PDF, JPG o PNG. Máximo 10 MB por archivo.</p></div></div>
           <div class="uploads">
-            <label><b>↑</b><span><strong>Cédula de identidad <em>*</em></strong><small>Ambos lados en un solo archivo</small><span class="file-status">Ningún archivo seleccionado</span></span><input type="file" name="cedula" accept=".pdf,.jpg,.jpeg,.png" required></label>
+            <label><b>↑</b><span><strong>Documento de identidad <em>*</em></strong><small>Cédula, DIMEX o pasaporte; ambos lados cuando corresponda</small><span class="file-status">Ningún archivo seleccionado</span></span><input type="file" name="cedula" accept=".pdf,.jpg,.jpeg,.png" required></label>
             <label><b>↑</b><span><strong>Hoja de delincuencia <em>*</em></strong><small>Documento vigente</small><span class="file-status">Ningún archivo seleccionado</span></span><input type="file" name="delincuencia" accept=".pdf,.jpg,.jpeg,.png" required></label>
             <label><b>↑</b><span><strong>Títulos universitarios</strong><small>Puede seleccionar varios</small><span class="file-status">Ningún archivo seleccionado</span></span><input type="file" name="titulosUniversitarios" accept=".pdf,.jpg,.jpeg,.png" multiple></label>
             <label><b>↑</b><span><strong>Otros títulos o certificaciones</strong><small>Puede seleccionar varios</small><span class="file-status">Ningún archivo seleccionado</span></span><input type="file" name="otrosTitulos" accept=".pdf,.jpg,.jpeg,.png" multiple></label>
