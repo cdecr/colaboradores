@@ -60,6 +60,7 @@ const ENGLISH_TEXT = {
   "Cédula, DIMEX o pasaporte; ambos lados cuando corresponda": "ID card, DIMEX or passport; both sides when applicable",
   "Hoja de delincuencia": "Criminal record certificate",
   "Documento vigente": "Current document",
+  "Documento opcional": "Optional document",
   "Títulos universitarios": "University degrees",
   "Otros títulos o certificaciones": "Other degrees or certifications",
   "Puede seleccionar varios": "You may select multiple files",
